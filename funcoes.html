@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <>
+    <script>
+
+        var ano = 2023;
+
+        function pularLinha() {
+            document.write("<br><br><br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pularLinha();
+        }
+
+        mostra("Olá, meu nome é Vanessa e eu tenho " + (18 + 2) + " anos.");
+
+        mostra("Eu nasci no ano de " + ((4000 / 2) + 2));
+
+        mostra("Meu nome é Miguel, eu tenho " + (ano - 2002) + " anos de idade.");
+
+        ano = 2021; 
+        document.write("Meu nome é Joana, e eu tenho " + (ano - 2001) + " anos");
+
+    </script>
 </body>
 </html>
