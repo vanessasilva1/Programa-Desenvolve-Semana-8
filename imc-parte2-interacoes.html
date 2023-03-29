@@ -30,6 +30,17 @@
 
         mostra(nome + ", o seu imc é " + imc);
 
+        if (imc < 18) {
+            mostra("Você está abaixo do recomendado.")
+        }
+
+        if (imc > 35) {
+            mostra("Você está acima do recomendado.")
+        }
+
+        if (imc >= 18 && imc <= 35) {
+            mostra("Seu imc está excelente!")
+        } 
     </script>
 </body>
 </html>
