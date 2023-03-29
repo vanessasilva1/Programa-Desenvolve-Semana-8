@@ -18,16 +18,26 @@
             pulaLinha();
         }
 
-        numeroAleatorio = Math.round(Math.random() * 10);
+        function sortear(numero) {
+            return Math.round(Math.random() * numero);
+        }
 
-        numeroDigitado = parseInt(prompt("Adivinhe o número: "));
+        var numeroPensado = sortear(100);
 
-        if(numeroDigitado == numeroAleatorio) {
-            mostra("Parabéns! Você acertou!")
+        var numeroDigitado = parseInt(prompt("Adivinhe o número: "));
+
+        if(numeroDigitado == numeroPensado) {
+            mostra("Parabéns! Você acertou!");
         } 
         
         else {
-            mostra("Você errou!")
+            mostra("Você errou!");
+            if (numeroDigitado > numeroPensado) {
+                mostra("O número que você digitou é maior do que o número pensado. ");
+            }
+            else {
+                mostra("O número que você digitou é menor do que o número pensado.")
+            }
         }
 
     </script>
